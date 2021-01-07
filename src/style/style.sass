@@ -1,0 +1,152 @@
+@import normalize.css
+
+*,
+*::after,
+*::before
+  box-sizing: border-box
+
+
+#app
+  background-color: #c4c8cc
+
+
+.container
+  width: 100%
+  min-height: 100vh
+  padding-left: 15px
+  padding-right: 15px
+
+
+.menu-wrap
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+
+.menu-title
+  margin-top: 200px
+  margin-bottom: 20px
+  text-align: center
+  font-size: 60px
+  font-weight: 700
+
+
+.form-group
+  display: flex
+  flex-direction: column
+  align-items: center
+
+
+.form-control
+  padding: 10px 20px
+  margin-bottom: 10px
+  border: 2px solid #333333
+  border-radius: 12px
+  font-size: 25px
+  font-weight: 600
+  color: #333333
+  background-color: transparent
+  outline: none
+
+
+.form-control::placeholder
+  font-size: 25px
+  font-weight: 600
+  color: #333333
+
+.btn
+  padding: 15px 35px
+  border: 2px solid #333333
+  border-radius: 12px
+  font-size: 25px
+  font-weight: 600
+  color: #333333
+  background-color: transparent
+  outline: none
+  cursor: pointer
+
+.game-wrap
+  display: flex
+  flex-direction: column
+  align-items: center
+  background-color: inherit
+
+.game-title
+  color: #333333
+
+.game-timer
+  display: inline-block
+  margin-left: 40px
+  color: #333333
+
+.card-list
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  margin: 0
+  padding: 30px 0 0 0
+  list-style: none
+
+
+.card
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 200px
+  height: 200px
+  margin-right: 20px
+  margin-bottom: 20px
+  border: 2px solid #333333
+  transition: transform 1s
+  transform-style: preserve-3d
+  cursor: pointer
+
+
+.card-text
+  display: inline-block
+  margin-top: 55px
+  font-size: 70px
+  font-weight: 800
+  color: #333333
+  pointer-events: none
+
+
+.card-face
+  position: absolute
+  height: 100%
+  width: 100%
+  backface-visibility: hidden
+  pointer-events: none
+
+
+.card-face--front
+  text-align: center
+  background: #ebe5e5
+  pointer-events: none
+
+
+.card-face--back
+  border: 2px solid #000
+  background: #333333
+  transform: rotateY(180deg)
+  pointer-events: none
+
+
+.card.is-flipped
+  transform: rotateY(180deg)
+
+.end-wrap
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.end-title
+  margin-top: 150px
+  font-size: 60px
+  font-weight: 600
+
